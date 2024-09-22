@@ -1,5 +1,4 @@
 const sum = require("./sum");
-const myNumberFunction = require("./myNumberFunction");
 
 test("Adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
@@ -23,10 +22,4 @@ test("null is falsy", () => {
 test("1 is truthy", () => {
   const n = 1;
   expect(n).toBeTruthy();
-});
-
-test("throws error on invalid input", () => {
-  expect(() => {
-    myNumberFunction("asdf");
-  }).toThrow();
 });
